@@ -1,0 +1,17 @@
+body {
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    padding: 20px;
+}
+
+/* Tiêu đề */
+h2 {
+    font-weight: bold;
+}
+
+/* Đoạn văn có nền vàng */
+.highlight {
+    background-color: yellow;
+    display: inline-block;
+    padding: 2px 5px;
+}
