@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Multiplication Table</title>
+  <script>
+    function showTable() {
+      var num = document.getElementById("number").value;
+      var output = "<b>Multiplication table " + num + ":</b><br>";
+      for (var i = 1; i <= 10; i++) {
+        output += num + " x " + i + " = " + (num * i) + "<br>";
+      }
+      document.getElementById("result").innerHTML = output;
+    }
+  </script>
+</head>
+<body>
+  <form>
+    <label>Which multiplication table that you want to display?</label>
+    <input type="number" id="number" value="9" oninput="showTable()" />
+  </form>
+  <div id="result" style="border:1px solid black; width:200px; padding:10px; margin-top:10px;">
+    <b>Multiplication table 9:</b><br>
+    9 x 1 = 9<br>
+    9 x 2 = 18<br>
+    9 x 3 = 27<br>
+    9 x 4 = 36<br>
+    9 x 5 = 45<br>
+    9 x 6 = 54<br>
+    9 x 7 = 63<br>
+    9 x 8 = 72<br>
+    9 x 9 = 81<br>
+    9 x 10 = 90<br>
+  </div>
+</body>
+</html>

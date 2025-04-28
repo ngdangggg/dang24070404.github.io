@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>ex02</title>
+  <script>
+    let txtA = prompt("Enter number A");
+    let txtB = prompt("Enter number B");
+
+    if (txtA === null || txtA.trim() === "" || isNaN(txtA)) {
+      alert("Number A is formatted incorrectly.");
+    } else if (txtB === null || txtB.trim() === "" || isNaN(txtB)) {
+      alert("Number B is formatted incorrectly.");
+    } else {
+      let result = parseFloat(txtA) + parseFloat(txtB);
+      alert(`Result:\n${txtA} + ${txtB} = ${result}`);
+    }
+  </script>
+</head>
+<body>
+</body>
+</html>
